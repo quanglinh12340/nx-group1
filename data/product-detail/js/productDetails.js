@@ -69,32 +69,62 @@ renderProductfirst();
 // ham tìm ID của sản phẩm sau đó render ra màn hình
 
 function getIDProduct() {
+  console.log("hello");
   let search = location.search;
   let idsp = null;
-
-  if (search) {
+  if (!search) {
+    idsp = 1;
+  } else {
     search = search.replace("?", "");
     console.log("search", search);
     const urlParams = new URLSearchParams(search); // tao danh sach object
     console.log("urlParams", urlParams.get("idSP"));
     idsp = urlParams.get("idSP") || null;
-
-    if (!idsp) {
-      return alert("khong tim thay san pham");
-    }
-
-    const product = products.find((product) => {
-      return product.idSP == idsp;
-    });
-    console.log("product Details:", product);
-
-    renderDescription(idsp);
-    renderSpecification(idsp);
-    renderComment(idsp);
-    renderReview(idsp);
-    renderProductDetails(idsp);
-    renderSlide(product.image);
   }
+  console.log("here", idsp);
+  if (!idsp) {
+    return render404ProductPage();
+  }
+
+  const product = products.find((product) => {
+    return product.idSP == idsp;
+  });
+  console.log("product Details:", product);
+
+  if (!product) {
+    return render404ProductPage();
+  }
+
+  // displayProductView();
+
+  renderDescription(idsp);
+  renderSpecification(idsp);
+  renderComment(idsp);
+  renderReview(idsp);
+  renderProductDetails(idsp);
+  renderSlide(product.image);
+}
+
+// function renderVisibleProductPage() {
+//   const el = document.querySelector(".notfound");
+//   el.style.Visibility = "hidden";
+
+//   const productView = document.querySelector(".product_image_area");
+//   const tablist = document.querySelector(".product_description_area");
+
+//   productView.style.visibility = "visible";
+//   tablist.style.Visibility = "visible";
+// }
+
+function render404ProductPage() {
+  const el = document.querySelector(".notfound");
+  el.style.visibility = "visible";
+
+  const productView = document.querySelector(".product_image_area");
+  const tablist = document.querySelector(".product_description_area");
+
+  productView.style.visibility = "hidden";
+  tablist.style.visibility = "hidden";
 }
 
 //goi ham

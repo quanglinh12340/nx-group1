@@ -18,9 +18,9 @@ function renderImagesFullSize(images) {
 function renderImagesThumbnail(images) {
   let boxImagesThumb = document.getElementById("images-thumb");
   console.log("boxImagesThumb", boxImagesThumb);
-  let htmlThumb = "";
+  // let htmlThumb = "";
 
-  images.forEach((item, index, Array) => {
+  images.forEach((item, index) => {
     const div = document.createElement("div");
     div.className = "column";
 
@@ -30,7 +30,7 @@ function renderImagesThumbnail(images) {
     image.alt = "";
     image.src = item;
     image.onclick = () => {
-      currentSlide(index);
+      currentSlide(index + 1);
     };
     div.appendChild(image);
 
@@ -75,7 +75,7 @@ function showSlides(n) {
 
 function addClickEventForBtnSilde() {
   const nextBtn = document.getElementById("next-slide");
-  const preBtn = document.getElementById("next-slide");
+  const preBtn = document.getElementById("pre-slide");
   if (nextBtn && preBtn) {
     nextBtn.onclick = () => {
       plusSlides(1);
