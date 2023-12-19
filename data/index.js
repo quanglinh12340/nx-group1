@@ -20,7 +20,11 @@ function renderList(list) {
       </div>
       <div class="caption">
         <h3>
+<<<<<<< HEAD
           <a href="/hello">${product.title}</a>
+=======
+          <a href="./product-details.html?idSP=${product.id}">${product.title}</a>
+>>>>>>> 32d98a9fc238283446b3748007b2110e8c16f92c
         </h3>
         <span>${product.price}</span>
       </div>
