@@ -1,12 +1,4 @@
-import {
-  products,
-  bedProd,
-  sofaProd,
-  tableProd,
-  chairProd,
-  LightingProd,
-  decoreProd,
-} from "./home_products.js";
+import { products, bedProd, sofaProd, tableProd, chairProd, LightingProd,decoreProd } from "./home_products.js";
 
 function renderList(list) {
   const elListProducts = document.querySelector(".wrap-popular-prod");
