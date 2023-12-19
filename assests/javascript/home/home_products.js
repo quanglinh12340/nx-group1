@@ -25,8 +25,11 @@ const products = [
     thumbnail:
       "https://preview.colorlib.com/theme/furn/assets/img/gallery/popular3.png",
     categories: ["Chair", "Lighting"],
-  },
+  }, 
 ];
+
+
+
 const sofaProd = [
     {
       id: 3,

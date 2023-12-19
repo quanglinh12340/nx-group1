@@ -11,78 +11,7 @@ body{
     --den-dam:#222;
     --trang-nhat:#fff;
 }
-// Thanh màu đen
-.swicher-bar{
-    background: var(--den-nhat);
-    border-bottom: 1px solid #444;
-    height: 60px;
-    max-height: 60px;
-    position: relative;
-    // z-index: 22;
-    // width: 100%;
-    .pull-left{
-        float: left;
-    }
-    .logo{
-        border-right: 1px solid #444 ;
-        a{
-            display: block;
-            img{
-                height: 30px;
-                width: auto;
-                margin: 15px 15px 0px 15px;
-            }
-        }
-    }
-    .product-swicher{
-        background-color:var(--den-dam);
-        a{
-            position: relative;
-            color: #9B9B9B;
-            display: block;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 50px;
-            max-height: 60px;
-            padding: 5px 40px 5px 40px;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-        a::before{
-            content: '+';
-            left: 20px;
-            position: absolute;
-            top: 4px;
-        }
-    }
-    .pull-right{
-        float: right;
-    }
-    .header-btn{
-        a{
-            border-left: 1px solid #444;
-            display: block;
-            font-size: 24px;
-            height: 60px;
-            width: 60px;
-            text-decoration: none;
-            padding-top: 10px;
-            padding-left: 18px;
-            color: #9B9B9B;
-        }
-        a:hover{
-            background-color: var(--den-dam);
-            color: var(--trang-nhat);
-            transition: 0.2s ease;
-        }
-    }
-    .shopping-btn{
-        background: #7AC64D;
-        a{
-        color: var(--trang-nhat);
-        }
-    }
-}
+
 //Thanh menu
 .top-nav{
     background-color:#F2E1D9;
@@ -103,7 +32,7 @@ body{
                         z-index: 2;
                         top: 0;
                         left: 0;
-                        transform: translateY(44%);
+                        // transform: translateY(44%);
                         img{
                             width: 165px;
                             height: 135px;

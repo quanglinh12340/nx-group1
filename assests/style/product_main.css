@@ -120,6 +120,9 @@
   z-index: 9;
   position: relative;
 }
+.popular-products .container .row .content .active {
+  color: #FD8F5F !important;
+}
 .popular-products .container .row .col {
   margin-bottom: 100px;
 }

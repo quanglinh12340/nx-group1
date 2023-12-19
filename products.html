@@ -9,38 +9,11 @@
     <link rel="stylesheet" href="./assests/style/product_footer.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="./assests/javascript/products/products.js" type="module" defer></script>
+
   </head>
   <body>
     <header>
-      <section class="swicher-bar"> <!-- Thanh màu đen-->
-        <div class="logo pull-left">
-          <a href=""><img src="./assests/images/colorib.png" title="swicher"></a>
-        </div>
-        <div class="product-swicher pull-left">
-          <a href="" title="Select a Product">furn</a>
-        </div>
-        <div class="remove-btn header-btn pull-right">
-          <a href=""><i class="fa-solid fa-xmark"></i></a>
-        </div>
-        <div class="shopping-btn header-btn pull-right">
-          <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-        </div>
-        <div class="mobile-btn header-btn pull-right">
-          <a href=""><i class="fa-solid fa-mobile-screen-button"></i></a>
-        </div>
-        <div class="tablet-btn header-btn pull-right">
-          <a href=""><i class="fa-solid fa-tablet-screen-button"></i></a>
-        </div>
-        <div class="desktop-btn header-btn pull-right">
-          <a href=""><i class="fa-solid fa-desktop"></i></a>
-        </div>
-      </section>
-      <section class="switcher-body">
-        <a href=""></a>
-        <div class="products-wrapper">
-          <a href=""></a>
-        </div>
-      </section>
       <nav class="top-nav "> <!-- Thanh menu-->
         <div class="container-fluid ">
           <div class="row align-items-center justify-content-between">
@@ -52,7 +25,7 @@
                 <div class="menu">
                   <nav>
                     <ul class=" " >
-                      <li><a href="Home.html">Home</a></li>
+                      <li><a href="index.html">Home</a></li>
                       <li><a href="Products.html">Product</a></li>
                       <li><a href="">About</a></li>
                       <li class="subnav-page" >
@@ -145,26 +118,27 @@
                 </div>
               </div>
             </div>
-            <div class="row" >
+            <div class="row">
               <div class=" col-xl-12">
                 <div class="content">
                   <nav>
-                    <div class="nav-tap d-flex justify-content-center flex-wrap">
-                      <a class="nav-link nav-item" href="sofa.html">Sofa</a>
-                      <a class="nav-link nav-item" href="">Table</a>
-                      <a class="nav-link nav-item" href="">Chair</a>
-                      <a class="nav-link nav-item" href="">Bed</a>
-                      <a class="nav-link nav-item" href="">Lightning</a>
-                      <a class="nav-link nav-item" href="">Decore</a>
+                    <div id="tap-menu" class="active nav-tap d-flex justify-content-center flex-wrap">
+                      <!-- <a class="nav-link nav-item " href="#all">All</a> -->
+                      <a class="nav-link nav-item" href="#sofa">Sofa</a>
+                      <a class="nav-link nav-item" href="#table">Table</a>
+                      <a class="nav-link nav-item" href="#chair">Chair</a>
+                      <a class="nav-link nav-item" href="#bed">Bed</a>
+                      <a class="nav-link nav-item" href="#lightning">Lightning</a>
+                      <a class="nav-link nav-item" href="#decore">Decore</a>
                     </div>
                   </nav>
                 </div>
               </div>
             </div>
-            <div class="row">
+            <div class="wrap-popular-prod row">
               <div class="tab-content">
                 <div class="row">
-                  <div class="col col-lg-4 col-md-6 col-sm-6">
+                  <!-- <div class="col col-lg-4 col-md-6 col-sm-6">
                     <div class="image">
                       <img src="https://preview.colorlib.com/theme/furn/assets/img/gallery/popular1.png" alt="">
                     </div>
@@ -262,7 +236,7 @@
                       </h3>
                       <span>$367</span>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>

@@ -1,4 +1,12 @@
-import { products, bedProd, sofaProd, tableProd, chairProd, LightingProd,decoreProd } from "./products.js";
+import {
+  products,
+  bedProd,
+  sofaProd,
+  tableProd,
+  chairProd,
+  LightingProd,
+  decoreProd,
+} from "./home_products.js";
 
 function renderList(list) {
   const elListProducts = document.querySelector(".wrap-popular-prod");
@@ -17,7 +25,9 @@ function renderList(list) {
             </div>
             <div class="caption">
                 <h3>
-                    <a href="">${item.title}</a>
+                    <a href="./product-detail.html?idSP=${item.idSP}">${
+          item.title
+        }</a>
                 </h3>
                 <span>$367</span>
             </div>
@@ -49,7 +59,7 @@ function onChangeUrl(params) {
       chair: chairProd,
       bed: bedProd,
       lightning: LightingProd,
-      decore: decoreProd
+      decore: decoreProd,
     };
     if (arrs[tabId.slice(1)]) {
       renderList(arrs[tabId.slice(1)]);
